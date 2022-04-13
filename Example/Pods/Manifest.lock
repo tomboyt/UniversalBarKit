@@ -1,16 +1,27 @@
 PODS:
-  - UniversalBarKit (0.1.0)
+  - lottie-ios (2.5.3)
+  - UniversalBarKit (0.0.1):
+    - lottie-ios
+    - UniversalBarKit/Vendors (= 0.0.1)
+  - UniversalBarKit/Vendors (0.0.1):
+    - lottie-ios
 
 DEPENDENCIES:
+  - lottie-ios (~> 2.5.3)
   - UniversalBarKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - lottie-ios
 
 EXTERNAL SOURCES:
   UniversalBarKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  UniversalBarKit: 32719e77c59d6073601f6e5dd52ae0ed08eb9e00
+  lottie-ios: a50d5c0160425cd4b01b852bb9578963e6d92d31
+  UniversalBarKit: 7d37f5041d21cc1e6dd7ce8dc6339ec822271356
 
-PODFILE CHECKSUM: cc4984aeb5ce8364fb2fed4bba308ad6d1bf498e
+PODFILE CHECKSUM: 913db0e2557e75ea67b5c6a62d4413020a6f899b
 
 COCOAPODS: 1.11.3

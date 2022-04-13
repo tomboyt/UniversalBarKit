@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1AF1B820B62500407B76C76B /* Pods_UniversalBarKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E59D77A53E9EAC254E08E10 /* Pods_UniversalBarKit_Tests.framework */; };
+		5D21209E8852B591AB70C581 /* Pods_UniversalBarKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 807A39478E05C0FD0D69578B /* Pods_UniversalBarKit_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		84ED5FD92806A878005946A3 /* Pods_UniversalBarKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84ED5FD82806A878005946A3 /* Pods_UniversalBarKit_Example.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7144585FCBD8C4492B09C3E9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		807A39478E05C0FD0D69578B /* Pods_UniversalBarKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalBarKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84ED5FD82806A878005946A3 /* Pods_UniversalBarKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_UniversalBarKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84ED5FDA2806A8CB005946A3 /* TQUBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TQUBar.framework; path = ../UniversalBarKit/NavBar/TQUBar.framework; sourceTree = "<group>"; };
 		8E59D77A53E9EAC254E08E10 /* Pods_UniversalBarKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalBarKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0895037DF7DF47A856A8EB6 /* Pods-UniversalBarKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalBarKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-UniversalBarKit_Tests/Pods-UniversalBarKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C986E8638F2F96E004E36D39 /* Pods-UniversalBarKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalBarKit_Example.release.xcconfig"; path = "Target Support Files/Pods-UniversalBarKit_Example/Pods-UniversalBarKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -56,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84ED5FD92806A878005946A3 /* Pods_UniversalBarKit_Example.framework in Frameworks */,
+				5D21209E8852B591AB70C581 /* Pods_UniversalBarKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +153,6 @@
 		AF55C4D51AEF6057DE243BEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84ED5FDA2806A8CB005946A3 /* TQUBar.framework */,
-				84ED5FD82806A878005946A3 /* Pods_UniversalBarKit_Example.framework */,
 				807A39478E05C0FD0D69578B /* Pods_UniversalBarKit_Example.framework */,
 				8E59D77A53E9EAC254E08E10 /* Pods_UniversalBarKit_Tests.framework */,
 			);
@@ -295,11 +291,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-UniversalBarKit_Example/Pods-UniversalBarKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/UniversalBarKit/UniversalBarKit.framework",
+				"${PODS_ROOT}/../../UniversalBarKit/Vendors/TQUBar.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UniversalBarKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TQUBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

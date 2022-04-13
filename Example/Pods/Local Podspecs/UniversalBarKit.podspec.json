@@ -1,22 +1,38 @@
 {
   "name": "UniversalBarKit",
-  "version": "0.1.0",
-  "summary": "A short description of UniversalBarKit.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.0.1",
+  "summary": "AnyBarKit",
+  "description": "AnyBarKit of UniversalBarKit.",
   "homepage": "https://github.com/tomboyt/UniversalBarKit",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE"
+  "source": {
+    "git": "https://github.com/tomboyt/UniversalBarKit.git",
+    "tag": "0.0.1"
   },
+  "license": "Public",
   "authors": {
     "tomboyt": "tomboyt@163.com"
   },
-  "source": {
-    "git": "https://github.com/tomboyt/UniversalBarKit.git",
-    "tag": "0.1.0"
+  "source_files": "UniversalBarKit/**/*.{swift,framework}",
+  "static_framework": true,
+  "pod_target_xcconfig": {
+    "VALID_ARCHS": "x86_64 armv7 arm64"
   },
+  "requires_arc": true,
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "UniversalBarKit/Classes/**/*"
+  "swift_versions": "5.0",
+  "dependencies": {
+    "lottie-ios": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Vendors",
+      "vendored_frameworks": "UniversalBarKit/Vendors/*.framework",
+      "preserve_paths": "UniversalBarKit/Vendors/*.framework"
+    }
+  ],
+  "swift_version": "5.0"
 }
