@@ -9,17 +9,15 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'tomboyt' => 'tomboyt@163.com' }
   s.source           = { :git => 'https://github.com/tomboyt/UniversalBarKit.git', :tag => '0.1.0' }
-  s.platform          = :ios, '9.0'
-  #s.ios.deployment_target = '9.0'
-  #s.source_files = 'UniversalBarKit/Classes/*.{swift,framework}'
-  #'UniversalBarKit/Classes/**/*'
+  s.ios.deployment_target = '9.0'
   s.static_framework  = true
   s.requires_arc      = true
   s.swift_versions    = '5.0'
   s.dependency 'lottie-ios'
+#  s.source_files = 'UniversalBarKit/Classes/*.{swift,framework}'
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
-  s.subspec 'NavBar' do |nb|
-      nb.vendored_frameworks   = 'UniversalBarKit/Classes/*.framework'
-      nb.preserve_paths        = 'UniversalBarKit/Classes/*.framework'
-      end
+#  s.subspec 'Vendors' do |nb|
+#      nb.vendored_frameworks   = 'UniversalBarKit/Vendors/*.framework'
+#      nb.preserve_paths        = 'UniversalBarKit/Vendors/*.framework'
+#      end
 end
