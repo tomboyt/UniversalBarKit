@@ -4,7 +4,7 @@ platform :ios, '9.0'
 
 target 'UniversalBarKit_Example' do
   pod 'UniversalBarKit', :path => '../'
-
+  pod 'lottie-ios','~> 2.5.3',:modular_headers => true
   target 'UniversalBarKit_Tests' do
     inherit! :search_paths
 

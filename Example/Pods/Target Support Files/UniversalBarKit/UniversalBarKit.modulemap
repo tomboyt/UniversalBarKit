@@ -1,0 +1,6 @@
+framework module UniversalBarKit {
+  umbrella header "UniversalBarKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

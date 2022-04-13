@@ -1,0 +1,4 @@
+framework module TQUBar {
+  header "TQUBar-Swift.h"
+  requires objc
+}
